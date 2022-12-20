@@ -37,4 +37,4 @@ GIT CHECKOUT: deixa um determinado arquivo original ex.: git checkout css/style.
 
 .gitignore: serve para esconder arquivos sensiveis, entre outras coisas.
 
-GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as pendentes serão excluidas
+GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as pendentes serão excluidas, voltara pro estado do ultimo git push feito
