@@ -29,3 +29,8 @@ git push -u origin main
 
 
 GIT RM <nome>: deleta o arquivo tanto do diretorio quanto do repositorio obviamente
+
+GIT MV <nome do arquivo> <destino do arquivo> ex.: git mv rodape.css css/rodape.css
+GIT MV <caminho/nome do arquivo> <caminho/novo nome> ex.: git mv css/bannner.css css/banner.css
+
+
