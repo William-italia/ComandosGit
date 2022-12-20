@@ -35,4 +35,5 @@ GIT MV <caminho/nome do arquivo> <caminho/novo nome> ex.: git mv css/bannner.css
 
 GIT CHECKOUT: deixa um determinado arquivo original ex.: git checkout css/style.css
 
-.gitignore: serve para esconder arquivos sensiveis.
+.gitignore: serve para esconder arquivos sensiveis, entre outras coisas.
+
