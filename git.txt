@@ -34,3 +34,4 @@ GIT MV <nome do arquivo> <destino do arquivo> ex.: git mv rodape.css css/rodape.
 GIT MV <caminho/nome do arquivo> <caminho/novo nome> ex.: git mv css/bannner.css css/banner.css
 
 
+ 
