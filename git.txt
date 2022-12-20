@@ -9,7 +9,7 @@ GIT COMMIT: comita um ou mais arquivos para serem enviados ao git;
 
 GIT PUSH: envia os arquivos para o repositorio remoto; 
 
-GIT PULL: sincroniza o projeto local com as mudanças do remoto;
+GIT PULL: sincroniza o projeto local com as mudanças do remoto; 
 
 git branch -M main: serve para criar uma branch mestre no projeto
 
