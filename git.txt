@@ -45,3 +45,7 @@ GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as
 para vizualizar as branches existentes usa-se o comando: git branch;
 para criar uma branch utiliza-se o comando git branch <nome>;
 
+Para deletar um branch é o mesmo comando só que é utilizada a flag --d ou --delete. ex.: git branch -d/--delete <nome da branch>
+
+para mudar de branch utilizamos o comando git checkout <nome da branch> e para mudar e criar um branch ao mesmo tempo utiliza-se a flag -b ex.: git checkout -b <nome da nova branch>
+
