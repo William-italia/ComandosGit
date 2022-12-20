@@ -1,0 +1,31 @@
+GIT INIT: inicia um repositorio no diretorio selecionado, criando os arquivos necessarios para inicializar, que ficam na pasta oculta ".git" 
+após isso o diretório atual começa a ser reconhecido pelo git como um projeto, e responde aos de mais comandos;
+
+GIT STATUS: Mostra o status do repositório, se tem coisas novas a serem adicionadas ou não;
+
+GIT ADD: Adiciona um arquivo especifico ou mais;
+
+GIT COMMIT: comita um ou mais arquivos para serem enviados ao git;
+
+GIT PUSH: envia os arquivos para o repositorio remoto; 
+
+GIT PULL: sincroniza o projeto local com as mudanças do remoto;
+
+git branch -M main: serve para criar uma branch mestre no projeto
+
+git remote add origin https://github.com/William-italia/teste01.git : add origin do repositorio
+caso não haja permissao:
+remote -v: mostra a origem atual;
+git remote rm origin > remove a origem atual do projeto
+git remote add origin <endereço/chave = link HTTPS/SSH> 
+
+echo "# teste01" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/William-italia/teste01.git
+git push -u origin main
+
+
+GIT RM <nome>: deleta o arquivo tanto do diretorio quanto do repositorio obviamente
