@@ -1,4 +1,4 @@
-|- - - COMANDOS BÁSICOS - - - |
+|- - - COMANDOS FUNDAMENTAL - - - |
 
 GIT INIT: inicia um repositorio no diretorio selecionado, criando os arquivos necessarios para inicializar, que ficam na pasta oculta ".git" 
 após isso o diretório atual começa a ser reconhecido pelo git como um projeto, e responde aos de mais comandos;
@@ -40,4 +40,7 @@ GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as
 
 .gitignore: serve para esconder arquivos sensiveis, entre outras coisas.
 
-|- - - COMANDOS DE GERENCIAMENTO DE BRANCH - - - |
+|- - - TRABALHANDO COM BRANCHES - - - |
+
+para vizualizar as branches existentes usa-se o comando: git branch;
+para criar uma branch utiliza-se o comando git branch <nome>;
