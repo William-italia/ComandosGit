@@ -1,3 +1,5 @@
+|- - - COMANDOS BÁSICOS - - - |
+
 GIT INIT: inicia um repositorio no diretorio selecionado, criando os arquivos necessarios para inicializar, que ficam na pasta oculta ".git" 
 após isso o diretório atual começa a ser reconhecido pelo git como um projeto, e responde aos de mais comandos;
 
@@ -34,7 +36,8 @@ GIT MV <nome do arquivo> <destino do arquivo> ex.: git mv rodape.css css/rodape.
 GIT MV <caminho/nome do arquivo> <caminho/novo nome> ex.: git mv css/bannner.css css/banner.css
 
 GIT CHECKOUT: deixa um determinado arquivo original ex.: git checkout css/style.css
+GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as pendentes serão excluidas, voltara pro estado do ultimo git push feito
 
 .gitignore: serve para esconder arquivos sensiveis, entre outras coisas.
 
-GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as pendentes serão excluidas, voltara pro estado do ultimo git push feito
+|- - - COMANDOS DE GERENCIAMENTO DE BRANCH - - - |
