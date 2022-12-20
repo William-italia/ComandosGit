@@ -44,3 +44,4 @@ GIT RESET: reseta as mudanças feitas, todas as mudanças commitadas e tambem as
 
 para vizualizar as branches existentes usa-se o comando: git branch;
 para criar uma branch utiliza-se o comando git branch <nome>;
+
