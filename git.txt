@@ -49,3 +49,5 @@ Para deletar um branch é o mesmo comando só que é utilizada a flag --d ou --d
 
 para mudar de branch utilizamos o comando git checkout <nome da branch> e para mudar e criar um branch ao mesmo tempo utiliza-se a flag -b ex.: git checkout -b <nome da nova branch>
 
+unindo branches: o codigo de dois branches distintos pode ser unido pelo comando git merge <nome>
+
