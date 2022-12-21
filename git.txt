@@ -51,3 +51,4 @@ para mudar de branch utilizamos o comando git checkout <nome da branch> e para m
 
 unindo branches: o codigo de dois branches distintos pode ser unido pelo comando git merge <nome>
 
+git stash: podemos salvar as modificações atuais para prossguir com uma outra abordagem de solução e não perder o código, apos o comando o branch será resetado para a sua versão de acordo com o repo
