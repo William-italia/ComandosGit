@@ -73,6 +73,6 @@ ou para enviar mais de uma tag git push origin --tags
 |- - - ENCONTRANDO BRANCHES - - - |
 
 Branches novas são criadas o tempo todo em projetos e seu git pode não estar mapeando eles;
-com o comando git fetch você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
+com o comando GIT FETCH -a você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
 
 este conmando é útil para utilizar o branch de algum outro dev do time, por exemplo;
