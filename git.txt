@@ -55,6 +55,3 @@ git stash: podemos salvar as modificações atuais para prossguir com uma outra 
 
 para listar os stashs usa-se o comando git stash list, para recuperarmos uma determinada stash podemos usar o comando git stash aplly <nome> 
 
-bom dia
-
-testando
