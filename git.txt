@@ -83,3 +83,7 @@ O comando git pull serve para recebermos atualizações do repositório remoto;
 cade branch pode ser atualizado com o git pull;
 utilizamos para atualizar a main do repo, e tambem quando trabalhamos em conjunto e queremos as atualizações  de um dev;
 
+
+
+                                                                                                   
+
