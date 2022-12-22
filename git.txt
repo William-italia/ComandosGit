@@ -53,5 +53,7 @@ unindo branches: o codigo de dois branches distintos pode ser unido pelo comando
 
 git stash: podemos salvar as modificações atuais para prossguir com uma outra abordagem de solução e não perder o código, apos o comando o branch será resetado para a sua versão de acordo com o repo
 
-para listar os stashs usa-se o comando git stash list, para recuperarmos uma determinada stash podemos usar o comando git stash aplly <nome> 
+para listar os stashs usa-se o comando git stash list, para recuperarmos uma determinada stash podemos usar o comando git stash aplly <numero> 
+comando: git stash show -p <numero>, conseguimos ver o conteudo;
 
+para removermos uma stash usamos o seguinte comando: git stash clear que deleta todas as stash ou git stash drop <numero> que deleta uma stash especifica; 
