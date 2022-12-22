@@ -57,3 +57,11 @@ para listar os stashs usa-se o comando git stash list, para recuperarmos uma det
 comando: git stash show -p <numero>, conseguimos ver o conteudo;
 
 para removermos uma stash usamos o seguinte comando: git stash clear que deleta todas as stash ou git stash drop <numero> que deleta uma stash especifica; 
+
+Utilizando tags:
+
+podemos criar tags nos branches por meio do comando git tag -a <nome> -m "<msg>"
+git tag: lista as tags existentes
+
+podemos verificar uma tag com o comando git show <nome>
+podemos trocar de tags com o comando git checkout <nome>
