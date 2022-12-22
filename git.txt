@@ -76,3 +76,10 @@ Branches novas são criadas o tempo todo em projetos e seu git pode não estar m
 com o comando GIT FETCH -a você é atualizado de todos os branchs e tags que ainda não estão reconhecidos por você;
 
 este conmando é útil para utilizar o branch de algum outro dev do time, por exemplo;
+
+|- - - recebendo alterações - - - |
+
+O comando git pull serve para recebermos atualizações do repositório remoto;
+cade branch pode ser atualizado com o git pull;
+utilizamos para atualizar a main do repo, e tambem quando trabalhamos em conjunto e queremos as atualizações  de um dev;
+
