@@ -69,3 +69,5 @@ podemos trocar de tags com o comando git checkout <nome>
 As tags podem ser enviadas para o repositótios de código, sendo compartilhada entre os Devs;
 O comando para isso é git push origin <nome>
 ou para enviar mais de uma tag git push origin --tags
+
+
