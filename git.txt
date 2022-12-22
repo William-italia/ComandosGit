@@ -65,3 +65,4 @@ git tag: lista as tags existentes
 
 podemos verificar uma tag com o comando git show <nome>
 podemos trocar de tags com o comando git checkout <nome>
+
