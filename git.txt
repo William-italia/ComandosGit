@@ -114,3 +114,16 @@ Podemos exbir as informações de tags também com: git show <tag>
 O comando git diff serve para exibir as diferenças de um branch;
 Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
 Podemos também verificar a diferença entre arquivos: git diff HEAD:<arquivo_a> <arquivo_a> ex.: git diff HEAD:git.txt git.txt 
+
+|- - - Log resumido - - - |
+
+O comando GIT SHORTLOG nos dá um log resumido do projeto;
+Cada commit será unido por nome do autor;
+Podemos então saber quais commits foram enviados ao projeto e por quem;
+
+|- - - Administração de repósitorio - - - |
+ 
+- limpando arquivos untracked
+O comando git clean vai verificar e limpar arquivos não estão sendo trackeados;
+Ou seja, todos que você não utilizou git add;
+utilizado para arquivos que são gerados automaticamente, por exemplo, que atrapalham a visualização do que é realmente importante;
