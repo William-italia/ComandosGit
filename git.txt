@@ -84,6 +84,33 @@ cade branch pode ser atualizado com o git pull;
 utilizamos para atualizar a main do repo, e tambem quando trabalhamos em conjunto e queremos as atualizações  de um dev;
 
 
+|- - - trabalhando com submódulos - - - |
 
-                                                                                                   
+submódulo é a maneira que temos de possuir dois ou mais projeots em um só repositorio;
 
+Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas;
+Para add o submódulo utilizamos o comando git submodule add <repo>
+Para verificar os submódulos o comando é git submodule  
+
+Atualizando submódulo
+
+Para atualizar um submódulo primeiro devemos commitar as mudanças;
+E para enviar para o repo do submódulo utilizamos git push --recurse-submodules=on-demand
+
+Este fluxo fará a atualização apenas do submódulo;
+
+
+|- - - Análise e inspeção - - - |
+
+- Exibindo informações
+
+O comando git show nos dá diversar informações úteis;
+Eles nos dá as informações do branch atual e também seus commits; 
+As modificações de arquivos entre cada commit também são exibidas;
+Podemos exbir as informações de tags também com: git show <tag>
+
+|- - - Exibindo diferenças - - - |
+
+O comando git diff serve para exibir as diferenças de um branch;
+Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
+Podemos também verificar a diferença entre arquivos: git diff <arquivo_a> <arquivo_b>
