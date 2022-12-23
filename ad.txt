@@ -6,3 +6,6 @@ enviando a funcionalidade b
 
 Console.log("Olá mundo!");
 
+funcionalidade c
+
+console.log("こんにちは世界");
