@@ -127,3 +127,9 @@ Podemos então saber quais commits foram enviados ao projeto e por quem;
 O comando git clean vai verificar e limpar arquivos não estão sendo trackeados;
 Ou seja, todos que você não utilizou git add;
 utilizado para arquivos que são gerados automaticamente, por exemplo, que atrapalham a visualização do que é realmente importante;
+
+- Otimizando o repositório
+
+O comando git gc é uma abreviação para garbage collector;
+Ele identifica arquivos que não são mais necessarios e os exclui;
+Isso fará com que o repositório seja otimizado em questões de performace;
