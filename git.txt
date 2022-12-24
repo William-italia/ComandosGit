@@ -146,3 +146,8 @@ Isso fará com que o repositório seja otimizado em questões de performace;
  O git reflog vai mapear todos os seus passos no repositórios, até uma mudança de branch é inserida neste log;
  Já o git log, que vimos anteriormente, apenas armazena os commits de um branch;
  Os reflogs ficam salvos até expirar, o tempo de expiração padrão é de 30 dias;
+
+- Transformando o repo para arquivo
+
+Com o comando git archive podemos transformar o repo em um arquivo compacto, por exemplo;
+O comando é git archive --format zip --output main_files.zip
