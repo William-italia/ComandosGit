@@ -168,9 +168,14 @@ precisamos padronizar os commits, para que o projeto cresça de forma saudável 
 * Há uma solução chamada private branches;
 * Onde criamos branches que não serão compartilhados no repositório, então podemos colocar qualquer commit;
 * Ao fim da solução do problema podemos fazer um rebase;
-* O comando será: git rebase <atual> <funcionalidade> -i
+* O comando será: git rebase < branch atual> < branch onde foi feita a funcionalidade> -i ex.: "git rebase func_a private_func_a -i" 
 * Escolhemos os branches para excluir (squash) e renomear com (reword);
 
- 
+ - Boas mensagens de commit 
 
+ * Separar assunto do corpo da mensagem;
+ * Assunto com no maximo 50 caracteres
+ * Assunto com letra inicial maiúscula;
+ * Corpo com no máximo 72 caracteres;
+ * Explicar o por que e como do commit, e não como o código foi escrito;
 
