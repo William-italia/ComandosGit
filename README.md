@@ -52,8 +52,8 @@ COMANDOS:
 > git remote rm origin (remove a origem atual do projeto)
 > usamos git push -u origin main no primeiro push do projeto (quando fazemos o repo desse modo);
 ````
-<br>
 
+<br>
 
 ## - Verificando mudanças do projeto 
 
@@ -123,3 +123,88 @@ COMANDOS:
 
 > git push
 ````
+<br>
+
+## - Recebendo as mudanças
+
+* É comum também ter que sincronizar o repo local com as mudanças do remote;
+* Está ação é feita pelo comando: GIT PULL;
+* Após o comando serão  buscadas atualizações, se encontradas elas serão unidas ao código atual existente na nossa máquina;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git pull
+````
+<br>
+
+## - clonando repositórios 
+
+* O ato de baixar um repositório de um servidor remoto é chamado de clonar repositório;
+* Para esta ação utilizamos git clone;
+* Passando a referência do repositório remoto;
+* Este comando é utilizado quando entramos em um novo projeto, por exemplo
+* Para realizarmos o clone utilizamos o comando GIT CLONE (link ou ssh do repositorio);
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git clone https://github.com/user/repo.git ou git@github.com:user/repo.git
+> git clone https://github.com/user/repo.git . (usando o ponto ele clonara o repo no diretório atual)
+> git clone https://github.com/user/repo.git projeto01 (usando um nome ele criara um clone com o nome desejado no caso "projeto01")
+````
+<br>
+
+## - Removendo arquivos do repositório
+
+* Os arquivos podem ser deletados da monitoração do git;
+* O comando para deletar é git rm
+* Após deletar um arquivo do git ele não terá mais suas atualizações consideradas pelo git;
+* Apenas quando for adicionado novamente pelo comando git add;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git rm <nome>
+````
+<br>
+
+## - Histórico de verificações
+
+* Podemos acessar um log de modificações feitas no projeto;
+* O comando para este recurso é: GIT LOG;
+* Você receberá uma informação dos commits realizados no projeto até então;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git log
+`````
+<br>
+
+## - Renomeando arquivos 
+
+* Com o comando: GIT MV podemos renomear um arquivo ou movelo;
+* O mesmo também pode ser movido para outra pasta;
+* E isso fará com que este novo arquivo seja monitorado pelo git;
+* O arquivo anterior é excluido
+<br>
+<br>
+
+`````
+COMANDOS: 
+
+> git mv
+> git mv about.html 
+>
+`````
+
+
