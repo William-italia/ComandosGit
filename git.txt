@@ -1,9 +1,54 @@
-|- - - COMANDOS FUNDAMENTAL - - - |
+|- - - GIT FUNDAMENTAL - - - |
 
-GIT INIT: inicia um repositorio no diretorio selecionado, criando os arquivos necessarios para inicializar, que ficam na pasta oculta ".git" 
-após isso o diretório atual começa a ser reconhecido pelo git como um projeto, e responde aos de mais comandos;
+- O que é o GitHub?
 
-GIT STATUS: Mostra o status do repositório, se tem coisas novas a serem adicionadas ou não;
+* É um serviço para gerenciar repositórios, gratuito e amplamente utilizado;
+* Podemos enviar nossos projetos para o GitHub e disponibilizá-lo para outros devs;
+* O GitHub é gratuito tanto para projetos públicos como privados;
+
+- O que é um repositório?
+
+* É onde o código será armazenado;
+* Na maioria das vezes cada projeto tem um repositório;
+* Quando criamos um repositórioestamos iniciando um projeto; 
+* O repositorio pode ir para servidores que são especializados em gerenciar repos, como: GitHub e Bitbucket;
+* Cada um dos desenvolvedores do time pode baixar o repositório e criar versões diferentes em sua máquina;
+
+- Criando repositório
+
+* Para criar um repositório utilizamos o comando GIT INIT;
+* Desta meneira o git vai criar os arquivos necessarios para inicializá-lo;
+* Que estão na pasta oculta .git;
+* Após este comando o diretório atual será reconhecido pelo git como um projeto e responderá aos seus demais comandos;
+
+COMANDOS: 
+> git init
+
+- Enviando repositório para o GitHub
+
+* Podemos facilmente enviar nossos repos para o GitHub;
+* Precisamos criar o projeto no nosso GitHub e inicializarmos o mesmo no git em nossa máquina, sincronizar com o github e enviar;
+* E esta sequêcia que parece ser complexa é facilmente executada por poucos comandos;
+* Vale lembrar que só fazemos UMA VEZ POR PROJETO esse fluxo;
+* Porém alguns dos comandos utilizados vão ser úteis ao longo dos seus projetos;
+
+COMANDOS:
+> git remote -v (mostra a origem atual do projeto);
+> git remote add origin <link ou ssh do repo do projeto> (add uma origem ao projeto);
+> git remote rm origin (remove a origem atual do projeto)
+> usamos git push -u origin main no primeiro push do projeto (quando fazemos o repo desse modo);
+
+- Verificando mudanças do projeto 
+
+* As mudanças do projeto podem ser verificadas por: GIT STATUS;
+* Este comando é utilizado frequentemente durante um projeto
+* Aqui serão mapeadas todas as alterações do projeto;
+* Podemos também dizer que é a diferença do que já foi enviado para o servidor ou salvo no projeto;
+
+COMANDOS:
+> git status
+
+- Adicionando arquivos ao projeto
 
 GIT ADD: Adiciona um arquivo especifico ou mais;
 
