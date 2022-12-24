@@ -151,3 +151,14 @@ Isso fará com que o repositório seja otimizado em questões de performace;
 
 Com o comando git archive podemos transformar o repo em um arquivo compacto, por exemplo;
 O comando é git archive --format zip --output main_files.zip  main ex.: git archive --format (formato no caso aqui é zip) --output (nome do arquivo no caso arquivos_main.zip) (e a branch no caso main)
+
+|- - - Melhorando os commits do projeto - - - |
+
+- A importância do commit
+
+O problema: commits sem sentido atrapalham o projeto;
+precisamos padronizar os commits, para que o projeto cresça de forma saudável também no versionamento, isso ajuda em:
+
+* Review do Pull Request;
+* Melhoria dos logs em git log;
+* Manutenção do projeto (voltar código, por exemplo) 
