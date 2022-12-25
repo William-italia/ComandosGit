@@ -1,6 +1,6 @@
- #  GIT FUNDAMENTAL 
+ #  __GIT FUNDAMENTAL__ 
  
-### -  O que é o GitHub?
+### *__-  O que é o GitHub?__*
 
 
 * É um serviço para gerenciar repositórios, gratuito e amplamente utilizado;
@@ -9,7 +9,7 @@
 
 <br>
 
-### - O que é um repositório?
+### *__- O que é um repositório?__*
 
 * É onde o código será armazenado;
 * Na maioria das vezes cada projeto tem um repositório;
@@ -19,7 +19,8 @@
 
 <br>
 
-### - Criando repositório
+### *__- Criando repositório__*
+
 * Para criar um repositório utilizamos o comando GIT INIT;
 * Desta meneira o git vai criar os arquivos necessarios para inicializá-lo;
 * Que estão na pasta oculta .git;
@@ -34,7 +35,7 @@ COMANDOS:
 ````
 <br>
 
-### - Enviando repositório para o GitHub
+### *__- Enviando repositório para o GitHub__*
 
 * Podemos facilmente enviar nossos repos para o GitHub;
 * Precisamos criar o projeto no nosso GitHub e inicializarmos o mesmo no git em nossa máquina, sincronizar com o github e enviar;
@@ -55,7 +56,7 @@ COMANDOS:
 
 <br>
 
-### - Verificando mudanças do projeto 
+### *__- Verificando mudanças do projeto__* 
 
 * As mudanças do projeto podem ser verificadas por: GIT STATUS;
 * Este comando é utilizado frequentemente durante um projeto
@@ -72,7 +73,7 @@ COMANDOS:
 
 <br>
 
-### - Adicionando arquivos ao projeto
+### *__- Adicionando arquivos ao projeto__*
 
 * Para adicionarmos arquivos novos a um projeto utizamos o comando: GIT ADD;
 * Podemos adicionar um arquivos específico como também diversos de uma só vez;
@@ -89,7 +90,7 @@ COMANDOS:
 ````
 <br>
 
-### - Salvando alterações do projeto
+### *__- Salvando alterações do projeto__*
 
 * As alterações salvas do projeto asão realizadas por: GIT COMMIT;
 * Podemos commitar arquivos específicos ou vários de uma vez com a flag -a;
@@ -110,7 +111,7 @@ COMANDOS:
 ````
 <br>
 
-### - Enviando código ao repo remoto
+### *__- Enviando código ao repo remoto__*
 
 * Quando finalizamos uma funcionalidade nova, enviamos o código ao repositório remoto, que é o código-fonte;
 * Está ação é feita pelo comando: GIT PUSH;
@@ -125,7 +126,7 @@ COMANDOS:
 ````
 <br>
 
-### - Recebendo as mudanças
+### *__- Recebendo as mudanças__*
 
 * É comum também ter que sincronizar o repo local com as mudanças do remote;
 * Está ação é feita pelo comando: GIT PULL;
@@ -140,7 +141,7 @@ COMANDOS:
 ````
 <br>
 
-### - clonando repositórios 
+### *__- Clonando repositórios__* 
 
 * O ato de baixar um repositório de um servidor remoto é chamado de clonar repositório;
 * Para esta ação utilizamos git clone;
@@ -159,7 +160,7 @@ COMANDOS:
 ````
 <br>
 
-### - Removendo arquivos do repositório
+### *__- Removendo arquivos do repositório__*
 
 * Os arquivos podem ser deletados da monitoração do git;
 * O comando para deletar é git rm
@@ -175,7 +176,7 @@ COMANDOS:
 ````
 <br>
 
-### - Histórico de verificações
+### *__- Histórico de verificações__*
 
 * Podemos acessar um log de modificações feitas no projeto;
 * O comando para este recurso é: GIT LOG;
@@ -190,7 +191,7 @@ COMANDOS:
 `````
 <br>
 
-### - Renomeando arquivos 
+### *__- Renomeando arquivos__*
 
 * Com o comando: GIT MV podemos renomear um arquivo ou movelo;
 * O mesmo também pode ser movido para outra pasta;
@@ -208,7 +209,7 @@ COMANDOS:
 `````
 <br>
 
-### - Desfazendo alterações 
+### *__- Desfazendo alterações__* 
 
 * O arquivo modificado pode ser retornado ao estado original
 * O comando utilizado é o: GIT CHECKOUT;
@@ -225,7 +226,7 @@ COMANDOS:
 `````
 <br>
 
-### - Ignorando arquivos do projeto
+### *__- Ignorando arquivos do projeto__*
 
 * Uma técnica mmuito utilizada é ignorar arquivos do projeto;
 * Devemos inserir um arquivo chamado .gitignore na raiz do projeto;
@@ -234,7 +235,7 @@ COMANDOS:
 <br>
 <br>
 
-### - Desfazendo todas as alterações 
+### *__- Desfazendo todas as alterações__* 
 
 * Com o comando: GIT RESET podemos resetar as mudanças feitas;
 * Geralmente é utilizado com a flag --hard
@@ -250,9 +251,9 @@ COMANDOS:
 `````
 <br>
 
-# TRABALHANDO COM BRANCHES
+# __TRABALHANDO COM BRANCHES__
 
-### - O que é um branch?
+### *__- O que é um branch?__*
 
 * Branch é a forma que o git separa as versões dos projetos;
 * Quando um projeto é criado ele inicia na branch main, estamos trabalhando nela até este ponto;
@@ -261,7 +262,7 @@ COMANDOS:
 <br>
 <br>
 
-### - Criando e visualizando os branches
+### *__- Criando e visualizando os branches__*
 
 * Para vizualizar os branchs disponíveis basta usar o comando: GIT BRANCH;
 * Para criar um branch você precisa utilizar o comando: GIT BRANCH nome;
@@ -277,7 +278,7 @@ COMANDOS:
 `````
 <br>
 
-### - Deletando branchs
+### *__- Deletando branches__*
 
 * Podemos deletar um branch com a flag -d ou --delete;
 * Não é comum deletar um branch, normalmente guardamos o histórico do trabalho;
@@ -293,7 +294,7 @@ COMANDOS:
 `````
 <br>
 
-### - Mudando de branch 
+### *__- Mudando de branch__*
 
 * Podemos mudar para outro branch utilizando o comando: GIT CHECKOUT nome da branch;
 * Este comando também é utilizado para dispensar mudanças de um arquivo;
@@ -309,7 +310,7 @@ COMANDOS:
 `````
 <br>
 
-### - Unindo branches
+### *__- Unindo branches__*
 
 * O código de dois branches distintos pode ser unido pelo comando: GIT MERGE <"NOME">
 * Outro comando para a lista dos mais utilizados;
@@ -324,7 +325,7 @@ COMANDOS:
 `````
 <br>
 
-### - Stash
+### *__- Stash__*
 
 * Podemos salvar as modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código;
 * O comando para esta ação é o: GIT STASH;
@@ -339,7 +340,7 @@ COMANDOS:
  `````
 <br>
 
-### - Recuperando stash
+### *__- Recuperando stash__*
 
 * Podemos verificar as stashs criadas pelo comando GIT STASH LIST;
 * E também podemos recuperar a stash com o comando GIT STASH NOME;
@@ -356,7 +357,7 @@ COMANDOS:
 ````
 <br>
 
-### - Removendo a stash 
+### *__- Removendo a stash__* 
 
 * Para limpar totalmente as stash de um branch podemos utilizar o comando GIT STASH CLEAR;
 * caso seja necessário deletar uma stash específica podemos utilizar GIT STASH DROP numero-da-stash;
@@ -371,7 +372,7 @@ COMANDOS:
 `````
 <br>
 
-### - Utilizando tags
+### *__- Utilizando tags__*
 
 * Podemos criar tags nos branches por meio do comando GIT TAG -A NOME -M "mensagem"
 * A tag é diferente do stash, serve como um checkpoint de um branch;
@@ -387,7 +388,7 @@ COMANDOS:
 `````
 <br>
 
-### - Verificando e alterando tags
+### *__- Verificando e alterando tags__*
 
 * Podemos verificar uma tag com o comando GIT SHOW NOME;
 * Podemos trocar de tags com o comando GIT CHECKOUT NOME;
@@ -403,7 +404,7 @@ COMANDOS:
 `````
 <br>
 
-### - Enviando e compartilhando tags
+### *__- Enviando e compartilhando tags__*
 
 * As tags podem ser enviadas para o repositório de código, sendo compartilhada entre os devs;
 * O comando é GIT PUSH NOME;
@@ -419,9 +420,9 @@ COMANDOS:
 ````
 <br>
 
-# COMPARTILHAMENTO E ATUALIZAÇÃO
+# __COMPARTILHAMENTO E ATUALIZAÇÃO__
 
-### - Encontrando branches
+### *__- Encontrando branches__*
 
 * Branches novas são criadas a todo tempo e o seu git pode não estar mapeando eles;
 * Com o comando: GIT FETCH você é atualizado de todos os branchs e tags que ainda não estão sendo reconhecidas pelo seu git; 
@@ -436,13 +437,13 @@ COMANDOS:
 ````
 <br>
 
-### - Recebendo alterações
+### *__- Recebendo alterações__*
 
 * O comando GIT PULL serve para recebermos atualizações do repositório remoto;
 * Cada branch pode ser atualizado com o GIT PULL; 
 * Utilizamos tanto para atualizar a main do repo como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev;
 <br>
-<br>`
+<br>
 
  ````
  COMANDOS: 
@@ -451,7 +452,7 @@ COMANDOS:
  ````
 <br>
 
-### - Enviando alterações 
+### *__- Enviando alterações__* 
 
 * O comando GIT PUSH faz o inverso do pull, ele envia as alterações para o repo remoto;
 * Serve também para enviar as atualizações de um branch específico para um outro dev;
@@ -466,7 +467,7 @@ COMANDOS:
 ````
 <br>
 
-### - Utilizando o remote  
+### *__- Utilizando o remote__* 
 
 * Com o GIT REMOTE podemos fazer algumas ações como: adicionar um repo para trackear ou remover; 
 * Quando criamos um repo remoto, adicionamos ele ao git  com GIT REMOTE ADD ORIGIN LINK
@@ -483,7 +484,7 @@ COMANDOS:
 ````
 <br>
 
-### - Trabalhando com submódulos
+### *__- Trabalhando com submódulos__*
 
 * Submódulo é a maneira que temos de possuir dois ou mais projetos em um só repositório;
 * Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas;
@@ -500,7 +501,7 @@ COMANDOS:
 ````
 <br>
 
-### - Atualizando submódulo
+### *__- Atualizando submódulo__*
 
 * Para atualizar um submódulo primeiro devemos commitar as mudanças;
 * E para enviar para o repo do submódulo utilizamos GIT PUSH --RECURSE-SUBMODULES=ON-DEMAND;
@@ -515,4 +516,185 @@ COMANDOS:
 ````
 <br>
 
-# Análises e inspeção 
+# __Análises e inspeção__
+
+### *__- Exibindo informações__* 
+
+* O comando GIT SHOW nos dá diversas informações úteis;
+* Ele nos dá as informações do branch atual e também seus commits;
+* As modificações de arquivos entre cada commit também são exibidas;
+* Podemos exibir as informações de tags também com: GIT SHOW TAG;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git show
+> git show nome-da-tag
+````
+<br>
+
+### *__- Exibindo diferenças__*
+
+* O comando GIT DIFF serve para exibir as diferenças de um branch;
+* Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
+* Podemos também verificar a diferença entre arquivos: GIT DIFF ARQUIVO ARQUIVO_B
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git diff (compara a diferenças do arquivo aberto atualmente com o do repo remoto);
+> git diff <nome-da-branch> (compara as diferenças entre branches)
+> git diff HEAD:<arquivo> <arquivo> (compara as diferenças do mesmo arquivo entre o repositório remoto e o local)
+````
+<br>
+
+### *__- Log resumido__*
+
+* O comando GIT SHORTLOG nos dá um log resumido do projeto;
+* Cada commit será unido por nome do autor;
+* Podemos então saber quais commits foram enviados ao projeto e por quem;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git shortlog
+````
+<br>
+
+# __ADMINISTRAÇÃO DO REPOSITÓRIO__
+
+### *__- Limpando arquivos untracked__*
+
+* O comando GIT CLEAN vai verificar e limpar arquivos que não estão sendo crackeados;
+* Ou seja, todos que você não utilizou GIT ADD;
+* Utilizado para arquivos que são gerados automaticamente, por exemplo, e atrapalham a visualização do que é realmente importante;
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git clean
+> git clean -f 
+
+Aviso: confirme antes de usar, usando o comando git status, se não tem nenhum arquivo importante não adicionado ao repositório, caso tiver use o comando git add nome-do-arquivo, caso haja algum arquivo importante não adicionado ele será deletado;
+````
+<br>
+
+### *__- Otimizando o repositório__*
+
+* O comando GIT GC é uma abreviação para garbage collector;
+* Ele indentifica arquivos que não são mais necessários e os exclui;
+* Isso fará com que o repositório seja otimizado em questões de perfomace;
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git gc
+````
+<br>
+
+### *__- Checando integridade de arquivos__*
+
+* O comando GIT FSCK é uma abreviação de files system check;
+* Está instrução verifica a integridade de arquivos e sua conectividade;
+* Verificando assim possíveis corrupções em arquivos;
+* Comando de rotina, utilizado para ver se está tudo certo com nossos arquivos;
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git fsck 
+````
+<br>
+
+#### *__- Reflog__*
+
+* O comando GIT REFLOG vai mapear todos os seus passo no repositório, até uma mudança de branch inserida neste log;
+* Já o GIT LOG, que já falamos sobre anteriormente, apenas armazena os commits de um branch; 
+* Os reflogs ficam salvos até expirar, o tempo de expiração padrão é de 30 dias;
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git reflog (pode ser usado como uma maneira de avançar ou retroceder o projeto)
+> git reset --hard <codigo-reflog> (podemos resetar para algum log especifico, tanto no primeiro commit feito, quanto no ultimo)
+````
+<br>
+
+### *__- Transformando o repo para arquivo__*
+
+* Com o comando git archive podemos transformar o repo em um arquivo compactado, por exemplo;
+* O comando é GIT ARCHIVE --FORMAT ZIP --OUTPUT MAIN_FILES.ZIP MAIN
+* E então a main vai estar zipada no arquivo main_files.zip
+<br>
+<br>
+
+````
+COMANDOS: 
+
+> git archive --format <formato> --output <nome-desejado.formato> branch (vou deixar o zip desse projeto no repo)
+````
+<br>
+
+# __MELHORANDO OS COMMITS DO PROJETO__
+
+### *__- A importância do commit__*
+
+* Commits sem sentido atrapalham o projeto;
+* Precisamos padronizar os commits, para que o projeto cresça de forma saudável também no versionamento, isso ajuda em: 
+* Review do Pull Request;
+* Melhoria dos log em git log;
+* Manutenção do projeto 
+<br>
+<br>
+ 
+### *__- Branches com commtis ruins__*
+
+* Há uma solução chamada private branches;
+* Onde criamos branches que não serão compartilhadas no repositório, então podemos colocar qualquer commit;
+* Ao fim da solução do problema podemos fazer um REBASE;
+* O comando será: GIT REBASE <'ATUAL> <'FUNCIONALIDADE> -I
+* Escolhemos os branches para excluir (SQUASH) e renomear com (REWORD);
+<br>
+<br>
+
+ ````
+ COMANDOS:
+
+ > git rebase func_a private_func_a -i
+ ````
+
+### *__- Melhorando as mensagens de commit__*
+
+* Separar assunto do corpo da mensagem; 
+* Assunto com no máximo  50 caractéres;
+* Assunto com letra inicial maiúscula;
+* Corpo com no máximo 72 caracteres;
+* Explicar o por que e como do commit, e não como o código foi escrito;
+<br>
+<br>
+
+````
+COMANDOS: 
+> git commit -m
+> git commit -a -m
+> git commit -m "Mensagem principal
+>>
+>> Descrição do commit"
+````
+<br>
+
+

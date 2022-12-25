@@ -158,7 +158,7 @@ Podemos exbir as informações de tags também com: git show <tag>
 
 O comando git diff serve para exibir as diferenças de um branch;
 Quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal;
-Podemos também verificar a diferença entre arquivos: git diff HEAD:<arquivo_a> <arquivo_a> ex.: git diff HEAD:git.txt git.txt 
+Podemos também verificar a diferença entre arquivos: git diff HEAD:<arquivo_a> <arquivo_a> ex.: git diff HEAD:git.txt git.txt  
 
 |- - - Log resumido - - - |
 
