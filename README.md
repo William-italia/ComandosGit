@@ -252,6 +252,93 @@ COMANDOS:
 
 # TRABALHANDO COM BRANCHES
 
+### - O que é um branch?
+
+* Branch é a forma que o git separa as versões dos projetos;
+* Quando um projeto é criado ele inicia na branch main, estamos trabalhando nela até este ponto;
+* Geralmente cada nova feature de um projeto fica em um branch separado;
+* Após a finalização das alterações os branchs são unidos para ter o código-fonte final;
+<br>
+<br>
+
+### - Criando e visualizando os branches
+
+* Para vizualizar os branchs disponíveis basta usar o comando: GIT BRANCH;
+* Para criar um branch você precisa utilizar o comando: GIT BRANCH nome;
+* Estas duas operações são muito utilizadas no dia a dia de um dev;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git branch (mostra as branchs existentes no projeto)
+> git branch <nome> (cria uma nova branch)
+`````
+<br>
+
+### - Deletando branchs
+
+* Podemos deletar um branch com a flag -d ou --delete;
+* Não é comum deletar um branch, normalmente guardamos o histórico do trabalho;
+* Geralmente se usa o delete quando o branch foi criado errado;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git branch -d <nome_da_branch>
+> git branch --delete <nome_da_branch>
+`````
+<br>
+
+### - Mudando de branch 
+
+* Podemos mudar para outro branch utilizando o comando: GIT CHECKOUT nome da branch;
+* Este comando também é utilizado para dispensar mudanças de um arquivo;
+* Alterando o branch podemos levar alterações que não foram commitadas junto, tome cuidado!;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git checkout <nome-da-branch-existente> (muda a branch para uma já existente)
+> git checkout -b <"nome-da-branch"> (cria e muda de branch ao mesmo tempo)
+`````
+<br>
+
+### - Unindo branches
+
+* O código de dois branches distintos pode ser unido pelo comando: GIT MERGE <"NOME">
+* Outro comando para a lista dos mais utilizados;
+* Normalmente é por meio dele que recebemos as atualizações de outros devs;
+<br>
+<br>
+
+`````
+COMANDOS: 
+
+> git merge <nome-da-branch> (unifica as branches)
+`````
+<br>
+
+### - Stash
+
+* Podemos salvar as modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código;
+* O comando para esta ação é o: GIT STASH;
+* Após o comando o branch será resetado para a sua versão de acordo com o repositório, ultimo git push;
+<br>
+<br>
+
+ `````
+ COMANDOS: 
+
+ > git stash
+ >
+ >
+ `````
 
 
 
