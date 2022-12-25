@@ -335,11 +335,184 @@ COMANDOS:
  `````
  COMANDOS: 
 
- > git stash
- >
- >
+ > git stash (deixa o arquivo de acordo com o repo remoto, mas salva o codigo apagado em uma stash)
  `````
+<br>
 
+### - Recuperando stash
 
+* Podemos verificar as stashs criadas pelo comando GIT STASH LIST;
+* E também podemos recuperar a stash com o comando GIT STASH NOME;
+* Desta maneira podemos continuar de onde paramos com os arquivos adicionados a stash
+<br>
+<br>
 
+````
+COMANDOS:
 
+> git stash list (lista as stashs existentes)
+> git stash apply <numero-da-stash> (recupera a stash)
+> git stash show -p <numero-da-stash> (mostra as diferenças de uma determinada stash com a atual no terminal)
+````
+<br>
+
+### - Removendo a stash 
+
+* Para limpar totalmente as stash de um branch podemos utilizar o comando GIT STASH CLEAR;
+* caso seja necessário deletar uma stash específica podemos utilizar GIT STASH DROP numero-da-stash;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git stash clear (apaga todas as stashs existentes)
+> git stash drop number (apaga uma determinada stash)
+`````
+<br>
+
+### - Utilizando tags
+
+* Podemos criar tags nos branches por meio do comando GIT TAG -A NOME -M "mensagem"
+* A tag é diferente do stash, serve como um checkpoint de um branch;
+* É utilizada para demarcar estágios do desenvolvimento de algum recurso;
+<br>
+<br>
+
+`````
+COMANDOS: 
+
+> git tag (lista as tag existentes)
+> git tag -a <nome> -m <"msgm"> (cria uma tag)
+`````
+<br>
+
+### - Verificando e alterando tags
+
+* Podemos verificar uma tag com o comando GIT SHOW NOME;
+* Podemos trocar de tags com o comando GIT CHECKOUT NOME;
+* Desta maneira podemos retroceder ou avançar em checkpoints de um branch;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git show nome-da-tag (mostra o conteúdo da tag)
+> git checkout nome-da-tag (muda de tag)
+`````
+<br>
+
+### - Enviando e compartilhando tags
+
+* As tags podem ser enviadas para o repositório de código, sendo compartilhada entre os devs;
+* O comando é GIT PUSH NOME;
+* Ou se você quiser enviar mais tags GIT PUSH ORIGIN --TAGS;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git push origin nome-da-tag (envia uma tag especifica ao repositório)
+> git push origin --tags (envia todas as tags existentes na branch ao repositório)
+````
+<br>
+
+# COMPARTILHAMENTO E ATUALIZAÇÃO
+
+### - Encontrando branches
+
+* Branches novas são criadas a todo tempo e o seu git pode não estar mapeando eles;
+* Com o comando: GIT FETCH você é atualizado de todos os branchs e tags que ainda não estão sendo reconhecidas pelo seu git; 
+* Este comando é útil para utilizar o branch de algum outro dev do time por exemplo;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git fetch -a (puxa todos os branches que estão remotos)
+````
+<br>
+
+### - Recebendo alterações
+
+* O comando GIT PULL serve para recebermos atualizações do repositório remoto;
+* Cada branch pode ser atualizado com o GIT PULL; 
+* Utilizamos tanto para atualizar a main do repo como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev;
+<br>
+<br>`
+
+ ````
+ COMANDOS: 
+
+ > git pull (atualiza seu repo local com o remoto)
+ ````
+<br>
+
+### - Enviando alterações 
+
+* O comando GIT PUSH faz o inverso do pull, ele envia as alterações para o repo remoto;
+* Serve também para enviar as atualizações de um branch específico para um outro dev;
+* Ou quando terminamos uma tarefa e precisamos enviar ao repo;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git push
+````
+<br>
+
+### - Utilizando o remote  
+
+* Com o GIT REMOTE podemos fazer algumas ações como: adicionar um repo para trackear ou remover; 
+* Quando criamos um repo remoto, adicionamos ele ao git  com GIT REMOTE ADD ORIGIN LINK
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git remote 
+> git remote -v (mostra as origins atuais do repo)
+> git remote rm origin  (remove a origem do repo)
+> git remote add oring <link> (adiciona origem para o repo)
+````
+<br>
+
+### - Trabalhando com submódulos
+
+* Submódulo é a maneira que temos de possuir dois ou mais projetos em um só repositório;
+* Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas;
+* Para adicionar o submódulo utilizamos o comando GIT SUBMODULE ADD REPO;
+* Para verificar os submódulos o comando é: GIT SUBMODULE;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git submodule (mostra os submodulos existentes no repo)
+> git submodule add link-do-repo diretorio (cria um submodulo) 
+````
+<br>
+
+### - Atualizando submódulo
+
+* Para atualizar um submódulo primeiro devemos commitar as mudanças;
+* E para enviar para o repo do submódulo utilizamos GIT PUSH --RECURSE-SUBMODULES=ON-DEMAND;
+* Este fluxo fará a atualização apenas do submódulo;
+<br>
+<br>
+
+````
+COMANDOS:
+
+> git push --recurse-submodules=on-demand (esse modelo de git push é utilizado para atualizar submódulos)
+````
+<br>
+
+# Análises e inspeção 
