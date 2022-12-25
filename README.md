@@ -697,4 +697,5 @@ COMANDOS:
 ````
 <br>
 
+[Documentação Oficial Do Git](https://git-scm.com/docs/git/pt_BR)
 
