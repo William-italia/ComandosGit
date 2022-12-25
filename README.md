@@ -1,6 +1,6 @@
  #  GIT FUNDAMENTAL 
  
-## -  O que é o GitHub?
+### -  O que é o GitHub?
 
 
 * É um serviço para gerenciar repositórios, gratuito e amplamente utilizado;
@@ -9,7 +9,7 @@
 
 <br>
 
-## - O que é um repositório?
+### - O que é um repositório?
 
 * É onde o código será armazenado;
 * Na maioria das vezes cada projeto tem um repositório;
@@ -19,7 +19,7 @@
 
 <br>
 
-## - Criando repositório
+### - Criando repositório
 * Para criar um repositório utilizamos o comando GIT INIT;
 * Desta meneira o git vai criar os arquivos necessarios para inicializá-lo;
 * Que estão na pasta oculta .git;
@@ -34,7 +34,7 @@ COMANDOS:
 ````
 <br>
 
-## - Enviando repositório para o GitHub
+### - Enviando repositório para o GitHub
 
 * Podemos facilmente enviar nossos repos para o GitHub;
 * Precisamos criar o projeto no nosso GitHub e inicializarmos o mesmo no git em nossa máquina, sincronizar com o github e enviar;
@@ -55,7 +55,7 @@ COMANDOS:
 
 <br>
 
-## - Verificando mudanças do projeto 
+### - Verificando mudanças do projeto 
 
 * As mudanças do projeto podem ser verificadas por: GIT STATUS;
 * Este comando é utilizado frequentemente durante um projeto
@@ -72,7 +72,7 @@ COMANDOS:
 
 <br>
 
-## - Adicionando arquivos ao projeto
+### - Adicionando arquivos ao projeto
 
 * Para adicionarmos arquivos novos a um projeto utizamos o comando: GIT ADD;
 * Podemos adicionar um arquivos específico como também diversos de uma só vez;
@@ -89,7 +89,7 @@ COMANDOS:
 ````
 <br>
 
-## - Salvando alterações do projeto
+### - Salvando alterações do projeto
 
 * As alterações salvas do projeto asão realizadas por: GIT COMMIT;
 * Podemos commitar arquivos específicos ou vários de uma vez com a flag -a;
@@ -110,7 +110,7 @@ COMANDOS:
 ````
 <br>
 
-## - Enviando código ao repo remoto
+### - Enviando código ao repo remoto
 
 * Quando finalizamos uma funcionalidade nova, enviamos o código ao repositório remoto, que é o código-fonte;
 * Está ação é feita pelo comando: GIT PUSH;
@@ -125,7 +125,7 @@ COMANDOS:
 ````
 <br>
 
-## - Recebendo as mudanças
+### - Recebendo as mudanças
 
 * É comum também ter que sincronizar o repo local com as mudanças do remote;
 * Está ação é feita pelo comando: GIT PULL;
@@ -140,7 +140,7 @@ COMANDOS:
 ````
 <br>
 
-## - clonando repositórios 
+### - clonando repositórios 
 
 * O ato de baixar um repositório de um servidor remoto é chamado de clonar repositório;
 * Para esta ação utilizamos git clone;
@@ -159,7 +159,7 @@ COMANDOS:
 ````
 <br>
 
-## - Removendo arquivos do repositório
+### - Removendo arquivos do repositório
 
 * Os arquivos podem ser deletados da monitoração do git;
 * O comando para deletar é git rm
@@ -175,7 +175,7 @@ COMANDOS:
 ````
 <br>
 
-## - Histórico de verificações
+### - Histórico de verificações
 
 * Podemos acessar um log de modificações feitas no projeto;
 * O comando para este recurso é: GIT LOG;
@@ -190,7 +190,7 @@ COMANDOS:
 `````
 <br>
 
-## - Renomeando arquivos 
+### - Renomeando arquivos 
 
 * Com o comando: GIT MV podemos renomear um arquivo ou movelo;
 * O mesmo também pode ser movido para outra pasta;
@@ -203,8 +203,56 @@ COMANDOS:
 COMANDOS: 
 
 > git mv
-> git mv about.html 
->
+> git mv aboult.html html/aboult.html
+> git mv abouuut.html aboult.html
 `````
+<br>
+
+### - Desfazendo alterações 
+
+* O arquivo modificado pode ser retornado ao estado original
+* O comando utilizado é o: GIT CHECKOUT;
+* Após a utilização do mesmo o arquivo sai do staging;
+* Caso seja feita uma proxima alteraçãos, ele entra em stading novamente;
+<br>
+<br>
+
+`````
+COMANDOS:
+
+> git checkout (volta para o ultimo push)
+> git checkout html/aboult.html (tambem pode ser usado em um arquivo especifico, dependendo da situação é recomendavel esse formato)
+`````
+<br>
+
+### - Ignorando arquivos do projeto
+
+* Uma técnica mmuito utilizada é ignorar arquivos do projeto;
+* Devemos inserir um arquivo chamado .gitignore na raiz do projeto;
+* Nele podemos inserir todos os arquivos que não devem entrar no versionamento;
+* Isso é útil para arquivos gerados automaticamente ou arquivos que contêm informações sensíveis;
+<br>
+<br>
+
+### - Desfazendo todas as alterações 
+
+* Com o comando: GIT RESET podemos resetar as mudanças feitas;
+* Geralmente é utilizado com a flag --hard
+* Todas as alterações commitadas e também as pendentes serão excluidas;
+<br>
+<br>
+
+`````
+COMANDOS: 
+
+> git reset --hard origin/main 
+(git reset --hard origin/branch desejada geralmente usa-se a main)
+`````
+<br>
+
+# TRABALHANDO COM BRANCHES
+
+
+
 
 
